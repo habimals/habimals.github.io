@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'none'" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light dark" />
+  <title>Gizlilik Politikası / Privacy Policy</title>
+  <meta name="description" content="Gizlilik politikası: toplanan veriler, AB sunucusu, yapay zeka kullanımı ve hesap silme." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body
+  data-page="privacy"
+  data-title-tr="{app} — Gizlilik Politikası"
+  data-title-en="{app} — Privacy Policy"
+  data-desc-tr="{app} gizlilik politikası: toplanan veriler, AB (İrlanda) sunucusu, yapay zeka kullanımı ve hesap silme."
+  data-desc-en="{app} privacy policy: data collection, EU (Ireland) storage, AI usage, and instant account deletion."
+>
+  <div class="wrap wrap-narrow">
+    <header id="site-header" class="site-header"></header>
+    <nav id="site-nav" class="site-nav"></nav>
+
+    <section class="doc-card" data-lang="tr">
+      <span class="doc-pill">Son güncelleme: <span data-updated-tr>30 Ekim 2026</span></span>
+      <h1>Gizlilik Politikası</h1>
+      <p>
+        <span data-app></span> olarak gizliliğinizi koruyoruz. Uygulamayı hesap açmadan yalnızca telefonunuzda kullanabilir ya da
+        verilerinizi yedeklemek için isteğe bağlı hesap oluşturabilirsiniz. Uygulamada üçüncü taraf reklam ve kullanıcı izleme (tracking)
+        yoktur; kişisel verileriniz hiçbir koşulda üçüncü taraflara satılmaz.
+      </p>
+
+      <h2>1. Toplanan Veriler ve Saklama Yeri</h2>
+      <ul>
+        <li>
+          <strong>Hesap Bilgileri (İsteğe Bağlı):</strong> E-posta adresi, Apple ile Giriş veya Google ile Giriş kullandığınızda
+          kimlik doğrulama bilgileriniz <strong>Supabase</strong> altyapısında, Avrupa Birliği (İrlanda / <code>eu-west-1</code>)
+          sunucusunda şifreli olarak saklanır.
+        </li>
+        <li>
+          <strong>Alışkanlık, Odak, Meditasyon ve Alarm Verileri:</strong> Alışkanlıklarınız, tamamlama serileriniz, odak sayacı ve
+          kronometre kayıtlarınız, meditasyon süreleriniz, ders programınız, alarmlarınız ve Buddy tercihleriniz öncelikle cihazınızda tutulur.
+          Hesap açtıysanız bu veriler yedekleme ve senkronizasyon için yine AB (İrlanda) sunucusundaki hesabınıza kaydedilir;
+          satır düzeyi güvenlik (RLS) sayesinde yalnızca siz erişebilirsiniz.
+        </li>
+        <li>
+          <strong>Ana Ekran Widget Verileri:</strong> "Bugün" ve "Sayaç" widget'larında gösterilen günlük özet bilgileri yalnızca cihaz
+          üzerindeki uygulama grubu alanında tutulur, üçüncü taraflarla paylaşılmaz.
+        </li>
+      </ul>
+
+      <h2>2. Kamera, Fotoğraflar ve Yapay Zekâ (Google Gemini)</h2>
+      <ul>
+        <li>
+          <strong>Alarm, Ders Programı ve Buddy Fotoğrafları:</strong> Fotoğraf görevli alarmda çektiğiniz fotoğraf, ders programı
+          okutmak için seçtiğiniz görüntü veya evcil hayvanınızdan Buddy tasarlarken seçtiğiniz fotoğraf, API anahtarını istemcide tutmayan
+          güvenli sunucu fonksiyonumuz üzerinden yalnızca o anki kontrolü veya analizi yapmak amacıyla <strong>Google Gemini</strong> servisine
+          iletilir ve sunucularımızda <strong>saklanmaz</strong>.
+        </li>
+        <li>
+          <strong>Barkod Görevli Alarm:</strong> Barkod ve QR okuma işlemi tamamen cihaz üzerinde gerçekleştirilir; kamera görüntüsü cihaz
+          dışına çıkmaz.
+        </li>
+        <li>
+          <strong>Yapay Zekâ Sohbeti:</strong> Buddy ile yaptığınız kısa komut ve sohbet yazışmaları yanıt üretmek için işlenir; günlük kullanım
+          sayısı kötüye kullanımı önlemek amacıyla sunucu tarafında sınırlandırılır.
+        </li>
+      </ul>
+
+      <h2>3. Sesler ve Ortam Kayıtları</h2>
+      <p>
+        Buddy ses tepkileri, rehberli meditasyon yönlendirmeleri ve ortam sesleri (Çiseleme, Uzak sahil, Pamuk bulut vb.) uygulama paketinin
+        içinden yerel olarak çalınır; arka planda mikrofon kaydı yapılmaz.
+      </p>
+
+      <h2>4. Reklam ve İzleme Yok</h2>
+      <p>
+        <span data-app></span> içinde üçüncü taraf reklam ağı, reklam kimliği (IDFA/GAID) takibi veya davranışsal analitik izleyicisi bulunmaz.
+      </p>
+
+      <h2>5. Hesap ve Veri Silme</h2>
+      <div class="danger-box">
+        Verilerinizi ve hesabınızı uygulama içinden istediğiniz an kalıcı olarak silebilirsiniz:<br /><br />
+        - <strong>Kayıtlı Hesabı Silme:</strong> <em>Profil &rarr; Hesap &rarr; Hesabımı sil</em> adımını kullandığınızda AB sunucusundaki
+        hesabınız ve tüm bulut verileriniz anında ve geri döndürülemez biçimde silinir.<br />
+        - <strong>Yerel Verileri Silme:</strong> <em>Profil &rarr; Baştan başla</em> düğmesiyle telefondaki tüm kayıtları ve misafir verilerini temizleyebilirsiniz.
+      </div>
+
+      <h2>6. İletişim</h2>
+      <div class="contact-box">
+        <span data-icon="mail" data-size="24"></span>
+        <div>
+          Gizlilik politikamız veya verilerinizle ilgili her türlü soru için bize ulaşabilirsiniz:<br />
+          E-posta: <a data-email href="#"></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="doc-card" data-lang="en">
+      <span class="doc-pill">Last updated: <span data-updated-en>30 October 2026</span></span>
+      <h1>Privacy Policy</h1>
+      <p>
+        At <span data-app></span>, we respect your privacy. You can use the app entirely on your device without creating an account, or optionally
+        sign in to back up your data. There are no ads and no cross-app tracking in <span data-app></span>, and we never sell your personal data.
+      </p>
+
+      <h2>1. Data Collected &amp; Storage Location</h2>
+      <ul>
+        <li>
+          <strong>Account Information (Optional):</strong> When you sign in with Email, Sign in with Apple, or Google Sign-In, your
+          authentication details are stored securely via <strong>Supabase</strong> on our European Union server in Ireland
+          (<code>eu-west-1</code>).
+        </li>
+        <li>
+          <strong>Habit, Focus, Meditation &amp; Alarm Data:</strong> Your habits, streaks, focus timer and stopwatch logs, meditation totals,
+          class schedule, alarms, and Buddy settings are stored locally on your device first. If you sign in, this data is backed up to your
+          account on the EU (Ireland) server, protected by Row-Level Security (RLS) so only you can access it.
+        </li>
+        <li>
+          <strong>Home Screen Widgets:</strong> Summary data displayed on the Today and Counter widgets stays strictly within your device's local
+          app container and is never shared with third parties.
+        </li>
+      </ul>
+
+      <h2>2. Camera, Photos &amp; Artificial Intelligence (Google Gemini)</h2>
+      <ul>
+        <li>
+          <strong>Alarm, Timetable &amp; Buddy Photos:</strong> Photos taken for photo-mission alarms, timetable images selected for scanning,
+          or pet photos used to design a custom Buddy are relayed securely via our server edge function to <strong>Google Gemini</strong> solely
+          to perform that verification or analysis and are <strong>never stored</strong> on our servers.
+        </li>
+        <li>
+          <strong>Barcode Alarm Missions:</strong> Barcode and QR scanning happens entirely on your device; camera frames never leave your phone.
+        </li>
+        <li>
+          <strong>AI Chat &amp; Commands:</strong> Messages sent to your Buddy are processed to generate replies, with daily usage counters
+          enforced on the server to prevent abuse.
+        </li>
+      </ul>
+
+      <h2>3. Voice Clips &amp; Ambient Audio</h2>
+      <p>
+        Buddy voice reactions, guided meditation prompts, and ambient soundscapes play locally from bundled audio assets; the app never records
+        background microphone audio.
+      </p>
+
+      <h2>4. No Ads or Tracking</h2>
+      <p>
+        <span data-app></span> contains no third-party ad networks, advertising identifiers (IDFA/GAID), or behavioural tracking SDKs.
+      </p>
+
+      <h2>5. Account &amp; Data Deletion</h2>
+      <div class="danger-box">
+        You can permanently delete your account and all data directly inside the app at any time:<br /><br />
+        - <strong>Delete Registered Account:</strong> Go to <em>Profile &rarr; Account &rarr; Delete my account</em> to immediately and
+        permanently erase your account and all cloud data from our EU server.<br />
+        - <strong>Clear Local Data:</strong> Tap <em>Profile &rarr; Start over</em> to wipe all local and guest data stored on your phone.
+      </div>
+
+      <h2>6. Contact Us</h2>
+      <div class="contact-box">
+        <span data-icon="mail" data-size="24"></span>
+        <div>
+          If you have any questions about this Privacy Policy or your data, contact us at:<br />
+          Email: <a data-email href="#"></a>
+        </div>
+      </div>
+    </section>
+
+    <footer id="site-footer" class="site-footer"></footer>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="art.js"></script>
+  <script src="site.js"></script>
+</body>
+</html>
