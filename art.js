@@ -622,11 +622,16 @@
           '<path d="M24 22 C26 27 31 29 31 34.5 C31 39 28 42 24 42 C20 42 17 39 17 34.5 C17 30 21 28 24 22 Z" fill="#FFD166"/>';
         break;
       case 'stone':
+        // kristal kümesi (uygulamadaki Icon.tsx ile aynı)
         inner =
-          '<path d="M24 5 L39 13.5 V32.5 L24 41 L9 32.5 V13.5 Z" fill="#9B5DE5" stroke="#9B5DE5" stroke-width="4" stroke-linejoin="round"/>' +
-          '<path d="M24 5 L39 13.5 L31 18 H17 L9 13.5 Z" fill="#C9A2FF"/>' +
-          '<path d="M17 18 H31 V28 H17 Z" fill="#A86BF0"/>' +
-          '<ellipse cx="20" cy="22" rx="2" ry="3.4" transform="rotate(-20 20 22)" fill="#FFFFFF" opacity="0.55"/>';
+          '<g transform="rotate(-24 15 39)"><path d="M15 15 L20 21 V38 H10 V21 Z" fill="#B07CF2" stroke="#B07CF2" stroke-width="2.5" stroke-linejoin="round"/><path d="M15 15 L20 21 V38 H15 Z" fill="#7B3FC4"/></g>' +
+          '<g transform="rotate(24 33 39)"><path d="M33 19 L37.5 24.5 V38 H28.5 V24.5 Z" fill="#B07CF2" stroke="#B07CF2" stroke-width="2.5" stroke-linejoin="round"/><path d="M33 19 L37.5 24.5 V38 H33 Z" fill="#7B3FC4"/></g>' +
+          '<path d="M24 4 L31 12.5 V38 H17 V12.5 Z" fill="#C9A2FF" stroke="#C9A2FF" stroke-width="3" stroke-linejoin="round"/>' +
+          '<path d="M24 4 L31 12.5 V38 H24 Z" fill="#9B5DE5"/>' +
+          '<path d="M24 4 L17 12.5 L24 15 L31 12.5 Z" fill="#E4D2FF"/>' +
+          '<ellipse cx="20.5" cy="22" rx="1.6" ry="5" fill="#FFFFFF" opacity="0.7"/>' +
+          '<path d="M7 41 C7 35 13 33 18 34.5 C21 32 28 32 31 34.5 C36 33 41 35 41 41 C41 43 39 44 37 44 H11 C9 44 7 43 7 41 Z" fill="#8A7FA0"/>' +
+          '<path d="M11 44 C9 44 7 43 7 41 C12 42 30 42.5 41 41 C41 43 39 44 37 44 Z" fill="#6E6385"/>';
         break;
       case 'check':
         inner =

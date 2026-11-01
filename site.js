@@ -134,6 +134,13 @@
       }
     }
 
+    // "Çıkınca haber ver": konu satırı hazır e-posta açar (sunucu/form yok, kimseden veri toplanmaz)
+    var notifyNodes = document.querySelectorAll('[data-notify]');
+    for (var n = 0; n < notifyNodes.length; n++) {
+      var subject = notifyNodes[n].getAttribute('data-subject') || CFG.appName;
+      notifyNodes[n].setAttribute('href', 'mailto:' + CFG.contactEmail + '?subject=' + encodeURIComponent(subject));
+    }
+
     var updTr = document.querySelectorAll('[data-updated-tr]');
     for (var k = 0; k < updTr.length; k++) {
       updTr[k].textContent = CFG.privacyUpdated.tr;
@@ -245,8 +252,8 @@
     if (footerEl) {
       footerEl.innerHTML =
         '<div><strong>' + CFG.copyrightYear + ' ' + CFG.appName + '</strong> &middot; ' +
-          '<span data-lang="tr">Reklamsız, izlemesiz günlük rutin arkadaşın.</span>' +
-          '<span data-lang="en">Ad-free, tracker-free daily routine companion.</span>' +
+          '<span data-lang="tr">Sevimli bir dostla alışkanlık takibi.</span>' +
+          '<span data-lang="en">Build habits with a cute companion.</span>' +
         '</div>' +
         '<div class="footer-links">' +
           '<a href="index.html"><span data-lang="tr">Tanıtım</span><span data-lang="en">Overview</span></a>' +
@@ -826,7 +833,7 @@
     document.body.insertBefore(blobs, document.body.firstChild);
 
     if (!('IntersectionObserver' in window)) return;
-    var targets = document.querySelectorAll('.section-head, .feature-card, .buddy-showcase-card, .privacy-strip, .doc-card, .faq-details');
+    var targets = document.querySelectorAll('.section-head, .step, .feature-card, .buddy-showcase-card, .privacy-strip, .doc-card, .faq-details');
     var observer = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {

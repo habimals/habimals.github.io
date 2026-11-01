@@ -93,8 +93,14 @@ html[lang="en"] [data-lang="en"] {
   display: block !important;
 }
 html[lang="tr"] .bento-grid[data-lang="tr"],
-html[lang="en"] .bento-grid[data-lang="en"] {
+html[lang="en"] .bento-grid[data-lang="en"],
+html[lang="tr"] .steps[data-lang="tr"],
+html[lang="en"] .steps[data-lang="en"] {
   display: grid !important;
+}
+html[lang="tr"] .extras[data-lang="tr"],
+html[lang="en"] .extras[data-lang="en"] {
+  display: flex !important;
 }
 html[lang="tr"] span[data-lang="tr"],
 html[lang="en"] span[data-lang="en"] {
@@ -1501,4 +1507,80 @@ html[lang="en"] span[data-lang="en"] {
   }
   .reveal { opacity: 1; transform: none; }
   .motion-blobs { display: none; }
+}
+
+/* ---------- Sade ana sayfa (2026-11-01): nasıl çalışır + ek özellik çipleri ---------- */
+.hero-note {
+  font-size: 13.5px;
+  color: var(--muted);
+  margin: 14px 0 0;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.step {
+  background: var(--surface);
+  border: 2px solid var(--border);
+  border-bottom-width: 4px;
+  border-radius: 24px;
+  padding: 22px;
+}
+
+.step-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: #fff;
+  font-weight: 900;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.step h3 {
+  font-size: 18px;
+  font-weight: 800;
+  margin: 0 0 6px;
+}
+
+.step p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.extras {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.extras-label {
+  font-weight: 800;
+  font-size: 14px;
+  color: var(--muted);
+  margin-right: 4px;
+}
+
+@media (max-width: 760px) {
+  .steps {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Üç ana özellik tablette de yan yana kalsın (metinler kısa) */
+@media (min-width: 641px) {
+  #features .feature-card.span-4 {
+    grid-column: span 4;
+  }
 }

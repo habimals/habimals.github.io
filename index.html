@@ -6,302 +6,162 @@
   <meta name="referrer" content="strict-origin-when-cross-origin" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="color-scheme" content="light dark" />
-  <title>Buddy'li Alışkanlık, Odak ve Alarm Uygulaması</title>
-  <meta name="description" content="Buddy'li alışkanlık takibi, odak sayacı, kronometre, kartlı saat, meditasyon, görevli alarm ve ders programı." />
+  <title>Habimals — Sevimli bir dostla alışkanlık takibi</title>
+  <meta name="description" content="Habimals ücretsiz bir alışkanlık uygulaması: her gün yaptıklarını işaretle, Buddy'n seninle sevinsin, serin uzasın." />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body
   data-page="index"
-  data-title-tr="{app} — Alışkanlık, Odak, Meditasyon ve Alarm Arkadaşın"
-  data-title-en="{app} — Habit, Focus, Meditation &amp; Alarm Companion"
-  data-desc-tr="{app}: Buddy'li sınırsız alışkanlık takibi, odak sayacı, kronometre, kartlı saat, rehberli meditasyon, ortam sesleri ve görevli alarm."
-  data-desc-en="{app}: Unlimited habit tracking with your Buddy, focus timer, stopwatch, flip clock, guided meditation, ambient sounds, and mission alarms."
+  data-title-tr="{app} — Sevimli bir dostla alışkanlık takibi"
+  data-title-en="{app} — Build habits with a cute companion"
+  data-desc-tr="{app} ücretsiz bir alışkanlık uygulaması: her gün yaptıklarını işaretle, Buddy'n seninle sevinsin, serin uzasın."
+  data-desc-en="{app} is a free habit app: tick off what you did today, your Buddy cheers with you and your streak grows."
 >
   <div class="wrap">
     <header id="site-header" class="site-header"></header>
     <nav id="site-nav" class="site-nav"></nav>
 
+    <!-- 1) İlk 5 saniye: bu ne, kime, ne yapayım? -->
     <section class="hero-grid">
       <div class="hero-card">
         <div data-lang="tr">
-          <span class="eyebrow-pill">
-            <span data-icon="sparkle" data-size="18"></span>
-            <span>Alışkanlık &middot; Odak &middot; Alarm &middot; Meditasyon</span>
-          </span>
-          <h1>Günlük rutinlerini Buddy'nle birlikte büyüt</h1>
+          <span class="eyebrow-pill">Ücretsiz alışkanlık uygulaması</span>
+          <h1>Alışkanlıklarını sevimli bir dostla takip et</h1>
           <p class="hero-lead">
-            Sana eşlik eden sevimli bir Buddy seç, sınırsız alışkanlık ekle, kartlı saat ve ortam sesleriyle odaklan,
-            nefes egzersizleriyle dinlen ve sabahları görevli alarmlarla zamanında uyan.
+            Her gün yaptıklarını işaretle; Buddy'n seninle sevinsin, serin uzasın.
+            Ders, spor, su içmek, erken kalkmak: hepsi tek uygulamada.
           </p>
           <div class="cta-row">
-            <a class="btn-3d" href="#buddies">Buddy'leri Keşfet</a>
-            <a class="btn-3d-secondary" href="#features">Tüm Özellikler</a>
+            <a class="btn-3d" data-notify data-subject="Habimals çıkınca bana haber ver" href="support.html">Çıkınca haber ver</a>
+            <a class="btn-3d-secondary" href="#how">Nasıl çalışır?</a>
           </div>
-          <div class="store-badges">
-            <div class="store-pill">
-              <span data-icon="check" data-size="22"></span>
-              <div class="store-pill-label">
-                <span class="store-pill-small">Yakında</span>
-                <span class="store-pill-big">iPhone ve iPad</span>
-              </div>
-            </div>
-            <div class="store-pill">
-              <span data-icon="star" data-size="22"></span>
-              <div class="store-pill-label">
-                <span class="store-pill-small">Yakında</span>
-                <span class="store-pill-big">Android</span>
-              </div>
-            </div>
-          </div>
-          <div class="trust-row">
-            <span class="trust-chip">Sınırsız ücretsiz alışkanlık</span>
-            <span class="trust-chip">Reklam ve izleme yok</span>
-            <span class="trust-chip">AB (İrlanda) bulut yedeği</span>
-          </div>
+          <p class="hero-note">Yakında iPhone, iPad ve Android'de. Haber almak için bize bir e-posta göndermen yeterli.</p>
         </div>
 
         <div data-lang="en">
-          <span class="eyebrow-pill">
-            <span data-icon="sparkle" data-size="18"></span>
-            <span>Habits &middot; Focus &middot; Alarms &middot; Meditation</span>
-          </span>
-          <h1>Grow your daily routines alongside your Buddy</h1>
+          <span class="eyebrow-pill">Free habit tracker</span>
+          <h1>Build habits with a cute companion</h1>
           <p class="hero-lead">
-            Pick a cheerful Buddy companion, track unlimited habits, stay deep in flow with a pure-black flip clock and ambient sounds,
-            unwind with guided breathwork, and wake up on time with mission alarms.
+            Tick off what you did today; your Buddy cheers with you and your streak grows.
+            Study, workouts, drinking water, waking up early: all in one app.
           </p>
           <div class="cta-row">
-            <a class="btn-3d" href="#buddies">Meet the Buddies</a>
-            <a class="btn-3d-secondary" href="#features">Explore Features</a>
+            <a class="btn-3d" data-notify data-subject="Tell me when Habimals launches" href="support.html">Notify me at launch</a>
+            <a class="btn-3d-secondary" href="#how">How it works</a>
           </div>
-          <div class="store-badges">
-            <div class="store-pill">
-              <span data-icon="check" data-size="22"></span>
-              <div class="store-pill-label">
-                <span class="store-pill-small">Coming soon</span>
-                <span class="store-pill-big">iPhone &amp; iPad</span>
-              </div>
-            </div>
-            <div class="store-pill">
-              <span data-icon="star" data-size="22"></span>
-              <div class="store-pill-label">
-                <span class="store-pill-small">Coming soon</span>
-                <span class="store-pill-big">Android</span>
-              </div>
-            </div>
-          </div>
-          <div class="trust-row">
-            <span class="trust-chip">Unlimited free habits</span>
-            <span class="trust-chip">Zero ads or tracking</span>
-            <span class="trust-chip">EU (Ireland) cloud backup</span>
-          </div>
+          <p class="hero-note">Coming soon to iPhone, iPad and Android. Just send us an email to hear first.</p>
         </div>
       </div>
 
       <div id="phone-mockup" class="mockup-stage"></div>
     </section>
 
-    <section id="buddies" class="section-block">
-      <div class="section-head" data-lang="tr">
-        <h2>Buddy'ni Seç, Sitenin Teması Değişsin</h2>
-        <p>
-          <span data-app></span> içindeki her Buddy'nin kendine özgü bir kişiliği, ödül birimi ve renk paleti vardır.
-          Aşağıdaki karakterlerden birine dokunarak hem açık hem koyu moddaki temasını hemen deneyebilirsin.
-        </p>
+    <!-- 2) Nasıl çalışır: 3 adım -->
+    <section id="how" class="section-block">
+      <div class="section-head" data-lang="tr"><h2>Nasıl çalışır?</h2></div>
+      <div class="section-head" data-lang="en"><h2>How it works</h2></div>
+
+      <div class="steps" data-lang="tr">
+        <div class="step"><span class="step-num">1</span><h3>Buddy'ni seç</h3><p>Sana eşlik edecek sevimli bir karakter seç ve ona bir isim ver.</p></div>
+        <div class="step"><span class="step-num">2</span><h3>Alışkanlıklarını ekle</h3><p>Ne kadar istersen ekle; sınır yok. "Günde 8 bardak su" gibi sayılı hedefler de olur.</p></div>
+        <div class="step"><span class="step-num">3</span><h3>Her gün işaretle</h3><p>Yaptıkça Buddy'n sevinir, serin uzar, yeni aksesuarlar açılır.</p></div>
       </div>
-      <div class="section-head" data-lang="en">
-        <h2>Pick a Buddy &amp; Watch the Theme Transform</h2>
-        <p>
-          Every Buddy in <span data-app></span> brings its own personality, reward unit, and colour palette.
-          Tap any companion below to preview its live theme across the entire page in both light and dark modes.
-        </p>
+      <div class="steps" data-lang="en">
+        <div class="step"><span class="step-num">1</span><h3>Pick your Buddy</h3><p>Choose a cute companion and give it a name.</p></div>
+        <div class="step"><span class="step-num">2</span><h3>Add your habits</h3><p>As many as you like, no limits. Counted goals like "8 glasses of water" work too.</p></div>
+        <div class="step"><span class="step-num">3</span><h3>Tick them off daily</h3><p>Your Buddy celebrates, your streak grows and new accessories unlock.</p></div>
+      </div>
+    </section>
+
+    <!-- 3) Yalnızca 3 ana özellik -->
+    <section id="features" class="section-block">
+      <div class="section-head" data-lang="tr"><h2>Günün için üç yardımcı</h2></div>
+      <div class="section-head" data-lang="en"><h2>Three helpers for your day</h2></div>
+
+      <div class="bento-grid" data-lang="tr">
+        <article class="feature-card span-4">
+          <div class="feature-icon-box" data-icon="check" data-size="28"></div>
+          <h3>Alışkanlık takibi</h3>
+          <p>Sınırsız alışkanlık, esnek seri ve geçmişini gösteren takvim.</p>
+        </article>
+        <article class="feature-card span-4">
+          <div class="feature-icon-box" data-icon="timer" data-size="28"></div>
+          <h3>Odak ve meditasyon</h3>
+          <p>Çalışma sayacı, sakinleştiren ortam sesleri ve rehberli nefes.</p>
+        </article>
+        <article class="feature-card span-4">
+          <div class="feature-icon-box" data-icon="barcode" data-size="28"></div>
+          <h3>Kesin uyandıran alarm</h3>
+          <p>Kalkıp banyodaki bir barkodu okutmadan susmayan alarm.</p>
+        </article>
+      </div>
+      <div class="bento-grid" data-lang="en">
+        <article class="feature-card span-4">
+          <div class="feature-icon-box" data-icon="check" data-size="28"></div>
+          <h3>Habit tracking</h3>
+          <p>Unlimited habits, forgiving streaks and a calendar of your progress.</p>
+        </article>
+        <article class="feature-card span-4">
+          <div class="feature-icon-box" data-icon="timer" data-size="28"></div>
+          <h3>Focus &amp; meditation</h3>
+          <p>A study timer, calming ambient sounds and guided breathing.</p>
+        </article>
+        <article class="feature-card span-4">
+          <div class="feature-icon-box" data-icon="barcode" data-size="28"></div>
+          <h3>Alarms that really wake you</h3>
+          <p>Keeps ringing until you get up and scan a barcode in the bathroom.</p>
+        </article>
       </div>
 
+      <div class="extras" data-lang="tr">
+        <span class="extras-label">Ve dahası:</span>
+        <span class="trust-chip">Kronometre</span>
+        <span class="trust-chip">Kartlı saat</span>
+        <span class="trust-chip">Ana ekran widget'ı</span>
+        <span class="trust-chip">Ders programı</span>
+        <span class="trust-chip">Karanlık mod</span>
+      </div>
+      <div class="extras" data-lang="en">
+        <span class="extras-label">And more:</span>
+        <span class="trust-chip">Stopwatch</span>
+        <span class="trust-chip">Flip clock</span>
+        <span class="trust-chip">Home screen widgets</span>
+        <span class="trust-chip">Class timetable</span>
+        <span class="trust-chip">Dark mode</span>
+      </div>
+    </section>
+
+    <!-- 4) Buddy'ler (oyun gibi: dokununca sayfa rengi değişir) -->
+    <section id="buddies" class="section-block">
+      <div class="section-head" data-lang="tr">
+        <h2>Buddy'lerle tanış</h2>
+        <p>Birine dokun, sayfa onun renklerine bürünsün.</p>
+      </div>
+      <div class="section-head" data-lang="en">
+        <h2>Meet the Buddies</h2>
+        <p>Tap one and the page takes on its colours.</p>
+      </div>
       <div id="buddy-showcase" class="buddy-showcase-card"></div>
     </section>
 
-    <section id="features" class="section-block">
-      <div class="section-head" data-lang="tr">
-        <h2>Tek Uygulamada Eksiksiz Günlük Düzen</h2>
-        <p>
-          Alışkanlık takibi, odaklanma, nefes molası ve sabah alarmı birbirinden kopuk uygulamalar yerine tek bir sade deneyimde buluşur.
-        </p>
-      </div>
-      <div class="section-head" data-lang="en">
-        <h2>Your Complete Daily Rhythm in One Place</h2>
-        <p>
-          Habit building, deep focus, mindful breathing, and wake-up alarms come together in one calm, cohesive companion app.
-        </p>
-      </div>
-
-      <div class="bento-grid" data-lang="tr">
-        <article class="feature-card">
-          <div class="feature-icon-box" data-icon="check" data-size="28"></div>
-          <span class="feature-tag">Alışkanlıklar</span>
-          <h3>Sınırsız Alışkanlık ve Esnek Seri</h3>
-          <p>
-            Günlük, haftalık veya "günde 8 bardak su" gibi sayılı hedefleri hiçbir sayı sınırı olmadan ekle.
-            Yoğun günlerde alışkanlığa uzun basıp kısa versiyonunu tamamla, taşlarınla serini koruyan izin günü kullan ve takvimden geçmişini izle.
-          </p>
-        </article>
-
-        <article class="feature-card">
-          <div class="feature-icon-box" data-icon="timer" data-size="28"></div>
-          <span class="feature-tag">Odak ve Kronometre</span>
-          <h3>Pomodoro, Kronometre ve Zaman Özeti</h3>
-          <p>
-            Çalışma ve mola turlarıyla odaklan ya da kronometreyi başlatıp bitirdiğinde süreyi doğrudan bir projeye veya alışkanlığa kaydet.
-            Günlük sütun grafikler, önceki dönem karşılaştırması ve saatlik dağılımla zamanını nereye ayırdığını net gör.
-          </p>
-        </article>
-
-        <article class="feature-card">
-          <div class="feature-icon-box" data-icon="flipclock" data-size="28"></div>
-          <span class="feature-tag">Yeni</span>
-          <h3>Büyük Kartlı Saat (Flip Clock)</h3>
-          <p>
-            Telefonun masada veya şarjdayken dikkat dağıtmayan tam siyah ekranda dev katlanan rakamlarla kalan ya da geçen süreyi takip et.
-            Tek dokunuşla yatay veya dikey görünüme geçer.
-          </p>
-        </article>
-
-        <article class="feature-card">
-          <div class="feature-icon-box" data-icon="meditation" data-size="28"></div>
-          <span class="feature-tag">Yeni</span>
-          <h3>Rehberli Meditasyon ve Ortam Sesleri</h3>
-          <p>
-            Buddy büyürken nefes al, küçülürken yavaşça ver. Sakinleşme, uykuya hazırlık ve odak öncesi rehberli seansları dinle;
-            Çiseleme, Uzak sahil, Pamuk bulut, Sıcak battaniye ve Sakin vadi sesleriyle dış gürültüyü geride bırak.
-          </p>
-        </article>
-
-        <article class="feature-card span-4">
-          <div class="feature-icon-box" data-icon="barcode" data-size="28"></div>
-          <span class="feature-tag">Görevli Alarm</span>
-          <h3>Kesin Uyandıran Alarm</h3>
-          <p>
-            Yataktan kalkıp kaydettiğin barkodu okutmadan ya da hedef nesnenin fotoğrafını çekmeden susmayan alarmlar kur.
-            Karanlık odalar için fener, küçük barkodlar için yakınlaştırma ve nazik ön uyarı desteği içerir.
-          </p>
-        </article>
-
-        <article class="feature-card span-4">
-          <div class="feature-icon-box" data-icon="schedule" data-size="28"></div>
-          <span class="feature-tag">Akıllı Planlama</span>
-          <h3>Ders Programı ve Komutlar</h3>
-          <p>
-            Ders programının fotoğrafını çek ya da metin olarak gir; boş saatlerine uygun çalışma ve uyku önerileri hazırlansın.
-            Buddy ile sohbet ederek doğal cümlelerle hızlıca alarm veya alışkanlık ekle.
-          </p>
-        </article>
-
-        <article class="feature-card span-4">
-          <div class="feature-icon-box" data-icon="widget" data-size="28"></div>
-          <span class="feature-tag">Ana Ekran</span>
-          <h3>Canlı Widget'lar ve Özgün Ses</h3>
-          <p>
-            "Bugün" noktalı ilerleme widget'ı ve bardakları dolan "Sayaç" widget'ı ile hedeflerini uygulamayı açmadan gör.
-            Robotik telefon okuma sesi yerine her Buddy'nin neşeli kayıtlı tepkilerini dinle ve seri uzadıkça dolaptan yeni aksesuarlar aç.
-          </p>
-        </article>
-      </div>
-
-      <div class="bento-grid" data-lang="en">
-        <article class="feature-card">
-          <div class="feature-icon-box" data-icon="check" data-size="28"></div>
-          <span class="feature-tag">Habits</span>
-          <h3>Unlimited Habits &amp; Forgiving Streaks</h3>
-          <p>
-            Add daily, weekly, or counted goals such as 8 glasses of water with zero artificial habit limits.
-            Long-press on busy days to log a lighter version, spend stones on rest days to protect your streak, and review full calendar insights.
-          </p>
-        </article>
-
-        <article class="feature-card">
-          <div class="feature-icon-box" data-icon="timer" data-size="28"></div>
-          <span class="feature-tag">Focus &amp; Stopwatch</span>
-          <h3>Pomodoro, Stopwatch &amp; Time Summary</h3>
-          <p>
-            Work in structured focus and break rounds, or run an open-ended stopwatch and assign the finished time to any habit or project.
-            Explore period-over-period comparisons, daily bar charts, project splits, and time-of-day breakdowns.
-          </p>
-        </article>
-
-        <article class="feature-card">
-          <div class="feature-icon-box" data-icon="flipclock" data-size="28"></div>
-          <span class="feature-tag">New</span>
-          <h3>Full-Screen Flip Clock</h3>
-          <p>
-            Keep a distraction-free pure-black clock on your desk while studying or charging, complete with bold folding cards
-            and one-tap portrait or landscape viewing.
-          </p>
-        </article>
-
-        <article class="feature-card">
-          <div class="feature-icon-box" data-icon="meditation" data-size="28"></div>
-          <span class="feature-tag">New</span>
-          <h3>Guided Meditation &amp; Ambient Sounds</h3>
-          <p>
-            Breathe in as your Buddy expands and slowly out as it settles. Follow guided sessions to unwind, prepare for sleep, or centre your mind,
-            paired with seamless loops like Drizzle, Distant shore, Cotton cloud, Warm blanket, and Quiet valley.
-          </p>
-        </article>
-
-        <article class="feature-card span-4">
-          <div class="feature-icon-box" data-icon="barcode" data-size="28"></div>
-          <span class="feature-tag">Mission Alarms</span>
-          <h3>Wake-Up Mission Alarms</h3>
-          <p>
-            Set strict alarms that keep ringing until you leave bed and scan a saved barcode or snap a photo of your target object —
-            complete with torch, zoom, pre-alarm nudges, and smart snooze limits.
-          </p>
-        </article>
-
-        <article class="feature-card span-4">
-          <div class="feature-icon-box" data-icon="schedule" data-size="28"></div>
-          <span class="feature-tag">Smart Planning</span>
-          <h3>Timetable Scanner &amp; Commands</h3>
-          <p>
-            Snap a photo of your class timetable or type it in to get tailored study, focus, and sleep suggestions around your schedule,
-            or ask your Buddy in plain language to set alarms and habits.
-          </p>
-        </article>
-
-        <article class="feature-card span-4">
-          <div class="feature-icon-box" data-icon="widget" data-size="28"></div>
-          <span class="feature-tag">Home Screen</span>
-          <h3>Widgets, Closet &amp; Real Voices</h3>
-          <p>
-            Track progress from your Home or Lock Screen with the Today checklist widget and visual water-cup Counter widget.
-            Unlock accessories as your streak grows and hear cheerful pre-recorded Buddy reactions instead of robotic text-to-speech.
-          </p>
-        </article>
-      </div>
-    </section>
-
+    <!-- 5) Güven -->
     <section class="privacy-strip">
       <div class="privacy-strip-left">
         <div class="feature-icon-box" data-icon="shield" data-size="28" style="margin-bottom:0;flex-shrink:0;"></div>
         <div data-lang="tr">
-          <h3>Önce Gizlilik: Hesap Zorunluluğu ve Reklam Yok</h3>
-          <p>
-            <span data-app></span> uygulamasını kayıt olmadan doğrudan telefonunda kullanabilirsin. İsteğe bağlı hesap açtığında verilerin
-            Avrupa Birliği (İrlanda) sunucusunda yalnızca senin erişebileceğin şekilde şifreli saklanır ve dilediğin an uygulama içinden tek dokunuşla silinebilir.
-          </p>
+          <h3>Kayıt olmadan kullan</h3>
+          <p>Hesap açman gerekmez. İstersen yedeklersin; verilerin Avrupa'da saklanır ve tek dokunuşla silinir.</p>
         </div>
         <div data-lang="en">
-          <h3>Privacy First: No Forced Sign-Up, Zero Ads</h3>
-          <p>
-            Use <span data-app></span> right away on your phone without creating an account. If you choose to back up your data,
-            it is stored on our European Union (Ireland) server with strict Row-Level Security and instant one-tap in-app deletion.
-          </p>
+          <h3>No sign-up needed</h3>
+          <p>No account required. Back up if you like; your data stays in Europe and can be deleted in one tap.</p>
         </div>
       </div>
       <div>
         <a class="btn-3d-secondary" href="privacy.html">
-          <span data-lang="tr">Gizlilik Politikasını Oku</span>
-          <span data-lang="en">Read Privacy Policy</span>
+          <span data-lang="tr">Gizlilik politikası</span>
+          <span data-lang="en">Privacy policy</span>
         </a>
       </div>
     </section>
