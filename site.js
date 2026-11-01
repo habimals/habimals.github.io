@@ -182,8 +182,8 @@
     var navEl = document.getElementById('site-nav');
     var footerEl = document.getElementById('site-footer');
 
-    var subTr = 'Buddy\'li Alışkanlık, Odak ve Alarm Arkadaşın';
-    var subEn = 'Habit, Focus & Alarm Companion';
+    var subTr = 'Alışkanlık edin, birlikte büyüyün.';
+    var subEn = 'Build habits. Grow together.';
     if (page === 'privacy') {
       subTr = 'Gizlilik Politikası';
       subEn = 'Privacy Policy';
