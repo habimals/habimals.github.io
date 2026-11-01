@@ -20,7 +20,7 @@
   var STORAGE_BUDDY = 'app_site_buddy';
 
   var state = {
-    lang: 'tr',
+    lang: 'en',
     theme: 'light',
     buddyId: 'dino',
     activeTab: 'today',
@@ -57,8 +57,8 @@
     if (q === 'en' || q === 'tr') return q;
     var saved = safeGet(STORAGE_LANG);
     if (saved === 'en' || saved === 'tr') return saved;
-    var nav = (navigator.language || '').toLowerCase();
-    return nav.indexOf('tr') === 0 ? 'tr' : 'en';
+    // Varsayılan dil İngilizce (hedef pazar global); Türkçe yalnızca TR düğmesi ya da ?lang=tr ile
+    return 'en';
   }
 
   function detectInitialTheme() {
@@ -252,8 +252,8 @@
     if (footerEl) {
       footerEl.innerHTML =
         '<div><strong>' + CFG.copyrightYear + ' ' + CFG.appName + '</strong> &middot; ' +
-          '<span data-lang="tr">Sevimli bir dostla alışkanlık takibi.</span>' +
-          '<span data-lang="en">Build habits with a cute companion.</span>' +
+          '<span data-lang="tr">Alışkanlık edin, birlikte büyüyün.</span>' +
+          '<span data-lang="en">Build habits. Grow together.</span>' +
         '</div>' +
         '<div class="footer-links">' +
           '<a href="index.html"><span data-lang="tr">Tanıtım</span><span data-lang="en">Overview</span></a>' +
