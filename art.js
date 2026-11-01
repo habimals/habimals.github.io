@@ -622,16 +622,15 @@
           '<path d="M24 22 C26 27 31 29 31 34.5 C31 39 28 42 24 42 C20 42 17 39 17 34.5 C17 30 21 28 24 22 Z" fill="#FFD166"/>';
         break;
       case 'stone':
-        // kristal kümesi (uygulamadaki Icon.tsx ile aynı)
+        // pembe pırlanta (uygulamadaki Icon.tsx ile aynı)
         inner =
-          '<g transform="rotate(-24 15 39)"><path d="M15 15 L20 21 V38 H10 V21 Z" fill="#B07CF2" stroke="#B07CF2" stroke-width="2.5" stroke-linejoin="round"/><path d="M15 15 L20 21 V38 H15 Z" fill="#7B3FC4"/></g>' +
-          '<g transform="rotate(24 33 39)"><path d="M33 19 L37.5 24.5 V38 H28.5 V24.5 Z" fill="#B07CF2" stroke="#B07CF2" stroke-width="2.5" stroke-linejoin="round"/><path d="M33 19 L37.5 24.5 V38 H33 Z" fill="#7B3FC4"/></g>' +
-          '<path d="M24 4 L31 12.5 V38 H17 V12.5 Z" fill="#C9A2FF" stroke="#C9A2FF" stroke-width="3" stroke-linejoin="round"/>' +
-          '<path d="M24 4 L31 12.5 V38 H24 Z" fill="#9B5DE5"/>' +
-          '<path d="M24 4 L17 12.5 L24 15 L31 12.5 Z" fill="#E4D2FF"/>' +
-          '<ellipse cx="20.5" cy="22" rx="1.6" ry="5" fill="#FFFFFF" opacity="0.7"/>' +
-          '<path d="M7 41 C7 35 13 33 18 34.5 C21 32 28 32 31 34.5 C36 33 41 35 41 41 C41 43 39 44 37 44 H11 C9 44 7 43 7 41 Z" fill="#8A7FA0"/>' +
-          '<path d="M11 44 C9 44 7 43 7 41 C12 42 30 42.5 41 41 C41 43 39 44 37 44 Z" fill="#6E6385"/>';
+          '<path d="M13 9 H35 L44 18 L24 43 L4 18 Z" fill="#F15BB5" stroke="#F15BB5" stroke-width="3" stroke-linejoin="round"/>' +
+          '<path d="M13 9 H35 L44 18 H4 Z" fill="#FF9ED2"/>' +
+          '<path d="M13 9 L18 18 L24 9 Z M24 9 L30 18 L35 9 Z" fill="#FFC9E6"/>' +
+          '<path d="M4 18 H18 L24 43 Z" fill="#D63C97"/>' +
+          '<path d="M18 18 L24 43 L30 18 Z" fill="#FF7AC2"/>' +
+          '<path d="M13 9 L18 18 L24 9 L30 18 L35 9 M4 18 H44" fill="none" stroke="#FFE0F0" stroke-width="1.2" stroke-linejoin="round" opacity="0.8"/>' +
+          '<ellipse cx="12" cy="14" rx="1.8" ry="3" fill="#FFFFFF" opacity="0.75"/>';
         break;
       case 'check':
         inner =
