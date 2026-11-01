@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'none'" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light dark" />
+  <title>Habimals — Email verified</title>
+  <meta name="description" content="Your Habimals email address is verified." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body
+  data-page="verified"
+  data-title-tr="{app} — E-posta doğrulandı"
+  data-title-en="{app} — Email verified"
+  data-desc-tr="{app} e-posta adresin doğrulandı."
+  data-desc-en="Your {app} email address is verified."
+>
+  <div class="wrap wrap-narrow">
+    <header id="site-header" class="site-header"></header>
+    <nav id="site-nav" class="site-nav"></nav>
+
+    <!-- Supabase e-posta doğrulama bağlantısı buraya döner (uygulama: services/auth.ts → EMAIL_REDIRECT) -->
+    <section class="doc-card" data-lang="tr">
+      <span class="doc-pill">Hesap</span>
+      <h1>E-postan doğrulandı</h1>
+      <p>Hesabın hazır. Bu sayfayı kapatıp <span data-app></span> uygulamasına dönebilirsin; Profil'deki Hesap kartında e-postanı göreceksin.</p>
+    </section>
+    <section class="doc-card" data-lang="en">
+      <span class="doc-pill">Account</span>
+      <h1>Your email is verified</h1>
+      <p>Your account is ready. You can close this page and go back to the <span data-app></span> app; your email will appear on the Account card in Profile.</p>
+    </section>
+
+    <footer id="site-footer" class="site-footer"></footer>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="art.js"></script>
+  <script src="site.js"></script>
+</body>
+</html>
